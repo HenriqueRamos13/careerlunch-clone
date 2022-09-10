@@ -6,7 +6,7 @@ interface Props {
 
 const Card: React.FC<Props> = ({ onClick }) => {
   return (
-    <button
+    <div
       onClick={onClick}
       className="w-full md:w-[240px] md:h-[464px] rounded-3xl shadow-xl shadow-gray-300 hover:shadow-gray-400 border-[1px] border-t-white border-l-white border-r-gray-500 border-b-gray-400 bg-primary"
     >
@@ -37,7 +37,7 @@ const Card: React.FC<Props> = ({ onClick }) => {
           </div>
         </div>
       </div>
-    </button>
+    </div>
   );
 };
 
