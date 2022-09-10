@@ -3,8 +3,6 @@ import Image from "next/image";
 import { useState } from "react";
 import Button from "../src/components/Button";
 import Card from "../src/components/Card";
-import Footer from "../src/components/Footer";
-import Header from "../src/components/Header";
 import Input from "../src/components/Input";
 
 const Home: NextPage = () => {
@@ -12,7 +10,6 @@ const Home: NextPage = () => {
 
   return (
     <div className="p-4 w-full h-full">
-      <Header />
       <div className="flex flex-row items-center gap-2">
         <div className="relative h-[16px] w-[16px]">
           <Image
@@ -77,7 +74,6 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
