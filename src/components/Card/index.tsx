@@ -26,7 +26,7 @@ const Card: React.FC<Props> = ({ onClick }) => {
             <p className="text-left">
               Wir sind im Bereich der Krankenversicherung führend in der
               Schweiz. // Nous sommes un des leaders suisses de
-              l'assurance-maladie.
+              lassurance-maladie.
             </p>
           </div>
           <div className="flex flex-row w-full gap-2">
