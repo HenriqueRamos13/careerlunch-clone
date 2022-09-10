@@ -1,4 +1,3 @@
-import Logo from "../../assets/logo.png";
 import RoundedBadge from "../RoundendBadge";
 
 interface Props {
@@ -11,7 +10,7 @@ const Header: React.FC<Props> = ({ onClick }) => {
       <nav className="w-full py-8 mb-6"></nav>
       <nav className="w-full py-8 px-4 absolute top-0 left-0 flex flex-row gap-8 justify-between md:justify-start">
         <img
-          src={Logo}
+          src={"/assets/logo.png"}
           className="w-[150px] h-[25px] md:w-[150px]"
           alt="Logo"
         />
