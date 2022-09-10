@@ -1,3 +1,4 @@
+import Image from "next/image";
 import RoundedBadge from "../RoundendBadge";
 
 interface Props {
@@ -7,12 +8,16 @@ interface Props {
 const Footer: React.FC<Props> = ({ onClick }) => {
   return (
     <footer className="w-full mt-8 pb-8 flex md:flex-row flex-col justify-between flex-wrap items-center gap-8 md:gap-0">
-      <img
-        src="https://career-lunch-storage.s3.eu-central-1.amazonaws.com/v2/layout/logo-mini-color.svg"
-        width="40"
-        className="StyledBox-sc-qq8vs4-0 jYEooS"
-        alt="mini logo"
-      />
+      <div className="relative h-[40px] w-[40px]">
+        <Image
+          src="https://career-lunch-storage.s3.eu-central-1.amazonaws.com/v2/layout/logo-mini-color.svg"
+          layout="responsive"
+          width={40}
+          height={40}
+          className="StyledBox-sc-qq8vs4-0 jYEooS"
+          alt="mini logo"
+        />
+      </div>
       <div className="flex flex-col items-center md:items-start">
         <p className="text-md text-secondary">hello@careerlunch.com</p>
         <p className="text-gray-900 text-md">
@@ -33,6 +38,7 @@ const Footer: React.FC<Props> = ({ onClick }) => {
           <i className="fa fa-instagram" style={{ fontSize: 20 }}></i>
         </RoundedBadge>
       </div>
+      <div></div>
       <div></div>
       <div></div>
       <p className="text-xs text-gray-400">© 2022 CareerLunch AG</p>
