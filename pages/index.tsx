@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 import { useState } from "react";
 import Button from "../src/components/Button";
 import Card from "../src/components/Card";
@@ -13,11 +14,15 @@ const Home: NextPage = () => {
     <div className="p-4 w-full h-full">
       <Header />
       <div className="flex flex-row items-center gap-2">
-        <img
-          src="https://career-lunch-storage.s3.eu-central-1.amazonaws.com/v2/layout/logo-mini-color.svg"
-          width="16"
-          className=""
-        ></img>
+        <div className="relative h-[16px] w-[16px]">
+          <Image
+            src="https://career-lunch-storage.s3.eu-central-1.amazonaws.com/v2/layout/logo-mini-color.svg"
+            layout="responsive"
+            width={40}
+            height={40}
+            alt="mini logo"
+          />
+        </div>
         <p className="text-xs text-gray-400">&gt;</p>
         <p className="text-sm">Top Employees</p>
       </div>
